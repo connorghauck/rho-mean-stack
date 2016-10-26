@@ -8,7 +8,7 @@
     "postinstall": "./build.sh"
   },
   "keywords": [],
-  "author": "Ryan Mulcahy <mulchy81@gmail.com>",
+  "author": "Connor Hauck",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.8",

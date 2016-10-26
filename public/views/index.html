@@ -14,16 +14,29 @@
 <body ng-controller="PeopleController as ctrl">
   <button ng-click="ctrl.listPeople()">Get People</button>
 
-  <ul>
     <li ng-repeat="person in ctrl.people">
-      <p>{{person.name}}</p>
+      <h4>Name: {{person.name}}</h4>
+    <ul>
+        <li>
+            <p>{{person.name}} is from {{person.hometown}}</p>
+        </li>
+        <li>
+            <p>{{person.name}}'s favorite movie is {{person.movie}}</p>
+        </li>
+    </ul>
     </li>
-  </ul>
 
   <div>
     <label>Name:</label>
     <input type="text" ng-model="ctrl.name">
+
+    <label>Hometown:</label>
+    <input type="text" ng-model="ctrl.hometown">
+
+    <label>Favorite Movie:</label>
+    <input type="text" ng-model="ctrl.movie">
     <button ng-click="ctrl.addPerson()">Add Person</button>
+
   </div>
 </body>
 </html>
